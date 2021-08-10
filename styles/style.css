@@ -1,0 +1,136 @@
+.header {
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+  color: white;
+  padding-top: 25px; }
+  .header .header-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto; }
+  .header .header-title {
+    width: 100%;
+    margin: 25px auto;
+    font-size: 25px;
+    position: relative; }
+    .header .header-title:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 25%;
+      display: inline-block;
+      width: 100px;
+      max-width: 100px;
+      height: 2px;
+      z-index: 1;
+      background-color: white; }
+    .header .header-title:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      display: inline-block;
+      width: 100px;
+      max-width: 100px;
+      height: 2px;
+      z-index: 1;
+      background-color: white; }
+  .header .header-category {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px; }
+    .header .header-category .category-item {
+      font-size: 20px;
+      opacity: 0.5; }
+      .header .header-category .category-item img {
+        background-color: white;
+        border-radius: 50%;
+        margin-bottom: 5px; }
+      .header .header-category .category-item:hover {
+        opacity: 0.7; }
+    .header .header-category .category-item.active {
+      opacity: 1;
+      position: relative; }
+      .header .header-category .category-item.active:before {
+        content: '';
+        position: absolute;
+        left: 40%;
+        bottom: -20px;
+        border: 15px solid transparent;
+        border-bottom: 15px solid white; }
+      .header .header-category .category-item.active:hover {
+        opacity: 1; }
+
+.main {
+  width: 100%;
+  padding-top: 25px; }
+  .main .main-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+    .main .main-container .current-food {
+      width: 30%;
+      font-size: 20px; }
+      .main .main-container .current-food .selector {
+        margin-top: 10px; }
+      .main .main-container .current-food img {
+        border-radius: 50%;
+        background-color: white;
+        width: 100%;
+        height: 50%; }
+      .main .main-container .current-food .volume {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 10px; }
+        .main .main-container .current-food .volume button {
+          width: 25%;
+          height: 50px;
+          max-height: 100px;
+          background-color: grey;
+          color: white;
+          font-size: 20px; }
+          .main .main-container .current-food .volume button:hover {
+            color: black; }
+        .main .main-container .current-food .volume button.active {
+          background-color: black;
+          color: white; }
+      .main .main-container .current-food .composition {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap; }
+        .main .main-container .current-food .composition .comp-item {
+          margin-top: 40px;
+          width: 25%;
+          color: black;
+          position: relative; }
+          .main .main-container .current-food .composition .comp-item img {
+            border-radius: 50%;
+            background-color: white;
+            width: 100%;
+            height: 100%; }
+          .main .main-container .current-food .composition .comp-item button {
+            position: absolute;
+            right: 0;
+            top: 80px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 20%; }
+          .main .main-container .current-food .composition .comp-item p {
+            width: 100%;
+            text-align: center; }
+    .main .main-container .add-ons {
+      width: 30%; }
+    .main .main-container .bzhu {
+      width: 30%; }
+
+/*# sourceMappingURL=style.css.map */

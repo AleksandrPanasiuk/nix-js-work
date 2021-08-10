@@ -1,0 +1,181 @@
+.header{
+    width:100%;
+    background-color:gray;
+    text-align:center;
+    color:white;
+    padding-top:25px;
+
+
+    .header-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:80%;
+        margin: 0 auto;
+
+
+    }
+    .header-title{
+        width:100%;
+        margin: 25px auto;
+        font-size: 25px;
+        position:relative;
+
+        &:before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 25%;
+        display: inline-block;
+        width: 100px;
+        max-width: 100px;
+        height: 2px;
+        z-index: 1;
+        background-color: white;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            display: inline-block;
+            width: 100px;
+            max-width: 100px;
+            height: 2px;
+            z-index: 1;
+            background-color: white;
+        }
+
+    }
+    .header-category{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 20px;
+
+        .category-item{
+            font-size:20px;
+            opacity: 0.5;
+            img{
+                background-color: white;
+                border-radius: 50%;
+                margin-bottom: 5px;
+            }
+            &:hover{
+                opacity: 0.7;
+            }
+        }
+
+        .category-item.active{
+            opacity: 1;
+            position: relative;
+
+            &:before{
+                content: '';
+                position: absolute;
+                left: 40%;
+                bottom: -20px;
+                border: 15px solid transparent;
+                border-bottom: 15px solid white;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+.main{
+    width:100%;
+    padding-top:25px;
+
+    .main-container{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        .current-food{
+            width: 30%;
+            font-size: 20px;
+
+            .selector{
+                margin-top: 10px;
+            }
+
+            img{
+                border-radius:50%;
+                background-color:white;
+                width:100%;
+                height:50%;
+            }
+
+            .volume{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                button{
+                    width:25%;
+                    height:50px;
+                    max-height: 100px;
+                    background-color:grey;
+                    color:white;
+                    font-size: 20px;
+                    &:hover{
+                        color:black;
+                    }
+                }
+                button.active{
+                    background-color:black;
+                    color:white;
+                }
+
+            }
+            .composition{
+                display: flex;
+                justify-content:space-between;
+                width: 100%;
+                flex-wrap: wrap;
+
+                .comp-item{
+                    margin-top: 40px;
+                    width:25%;
+                    color: black;
+                    position: relative;
+                    img{
+                        border-radius:50%;
+                        background-color:white;
+                        width:100%;
+                        height:100%;
+                    }
+                    button{
+                        position: absolute;
+                        right: 0;
+                        top:80px;
+                        background-color:red;
+                        color:white;
+                        border-radius:50%;
+                        width:20%;
+                    }
+                    p{
+                        width:100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .add-ons{
+            width:30%;
+        }
+        .bzhu{
+            width:30%;
+        }
+    }
+}
+
+
+
+
